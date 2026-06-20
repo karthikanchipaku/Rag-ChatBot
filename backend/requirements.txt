@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+chromadb
+python-multipart
+pdfminer.six
+openai
+langchain
+google-generativeai
+langchain-google-genai

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG AI Assistant</title>
+
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>🤖 RAG AI Assistant</h1>
+
+            <p>
+                Chat with your PDFs using Gemini AI,
+                ChromaDB and FastAPI.
+            </p>
+
+            <button id="startBtn">
+                🚀 Get Started
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+
+        <h2>✨ Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="card">
+                📄 Upload PDFs
+            </div>
+
+            <div class="card">
+                💬 Ask Questions
+            </div>
+
+            <div class="card">
+                🧠 Gemini Answers
+            </div>
+
+            <div class="card">
+                📚 Source Chunks
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Workflow -->
+    <section class="workflow">
+
+        <h2>⚙ How RAG Works</h2>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-card">
+                📄 Upload PDF
+            </div>
+
+            <div class="workflow-arrow">→</div>
+
+            <div class="workflow-card">
+                ✂ Create Chunks
+            </div>
+
+            <div class="workflow-arrow">→</div>
+
+            <div class="workflow-card">
+                📚 Store in ChromaDB
+            </div>
+
+            <div class="workflow-arrow">→</div>
+
+            <div class="workflow-card">
+                🔍 Semantic Search
+            </div>
+
+            <div class="workflow-arrow">→</div>
+
+            <div class="workflow-card">
+                🧠 Gemini Answer
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+
+        <h2>🛠 Built With</h2>
+
+        <div class="tech-grid">
+
+            <div class="tech-card">⚡ FastAPI</div>
+
+            <div class="tech-card">🧠 Gemini AI</div>
+
+            <div class="tech-card">📚 ChromaDB</div>
+
+            <div class="tech-card">🐍 Python</div>
+
+            <div class="tech-card">🎨 HTML CSS JS</div>
+
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+
+        <h2>📈 Project Highlights</h2>
+
+        <div class="stats-grid">
+
+            <div class="stat-box">
+                <h3>AI Powered</h3>
+                <p>Gemini Responses</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Vector Search</h3>
+                <p>ChromaDB Retrieval</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Fast Backend</h3>
+                <p>FastAPI Integration</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            RAG AI Assistant • Powered by Gemini + ChromaDB + FastAPI
+        </p>
+
+    </footer>
+
+<div id="launchScreen" class="launch-screen">
+
+    <div class="launch-card">
+
+        <div class="floating-icons">
+            <span>🤖</span>
+            <span>📄</span>
+            <span>🧠</span>
+            <span>📚</span>
+            <span>⚡</span>
+            <span>💬</span>
+        </div>
+
+        <h2>RAG AI Assistant</h2>
+
+        <p>Launching Knowledge Engine...</p>
+
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const startBtn = document.getElementById("startBtn");
+    const launchScreen = document.getElementById("launchScreen");
+
+    startBtn.addEventListener("click", () => {
+
+    window.scrollTo(0, 0);
+
+    launchScreen.classList.add("show");
+
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 3000);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
+

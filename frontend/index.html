@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>RAG ChatBot — Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+    <main class="chat-container">
+      <header class="main-header">
+
+  <div class="left-header">
+
+    <button class="home-btn"
+      onclick="window.location.href='welcome.html'">
+      🏠 Home
+    </button>
+
+    <div class="brand">
+      <h1>🤖 RAG AI Assistant</h1>
+      <p>Powered by Gemini + ChromaDB</p>
+    </div>
+
+  </div>
+
+  <div class="right-header">
+
+    
+
+    <button id="clearChatBtn">
+      Clear Chat
+    </button>
+
+    <label for="pdffile" class="file-btn">
+    📄 Select PDF
+</label>
+
+<span id="selectedFile">
+    No file selected
+</span>
+
+<input
+    type="file"
+    id="pdffile"
+    hidden
+>
+
+    <button id="uploadBtn">
+      Upload PDF
+    </button>
+
+  </div>
+
+</header>
+
+
+      <section id="messages" class="messages" aria-live="polite"></section>
+
+      <div class="composer">
+        <input id="input" placeholder="Ask a question..." autocomplete="off" />
+        <button id="send">Send</button>
+        <div id="askSpinner" class="spinner hidden" aria-hidden="true"></div>
+      </div>
+    </main>
+
+   
+    <script src="script.js"></script>
+    <div id="toast" class="toast hidden" role="status" aria-live="polite">
+      <span id="toastText">Chat cleared</span>
+      <button id="toastUndo" class="small">Undo</button>
+    </div>
+  </body>
+</html>
