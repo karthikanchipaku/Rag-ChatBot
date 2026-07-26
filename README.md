@@ -24,7 +24,7 @@ The application is decoupled into two primary tiers:
 - **Frontend**: Vanilla HTML, CSS, JavaScript
 - **DevOps**: Ready for Docker / local virtual environment
 
-## 📁 Repository Structure
+```text
 Rag-ChatBot/
 ├── backend/                     # FastAPI Backend
 │   ├── app.py                   # Main FastAPI application + API routes
