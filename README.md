@@ -25,7 +25,6 @@ The application is decoupled into two primary tiers:
 - **DevOps**: Ready for Docker / local virtual environment
 
 ---
-
 ## 📁 Repository Structure
 Rag-ChatBot/
 ├── backend/                     # FastAPI Backend
